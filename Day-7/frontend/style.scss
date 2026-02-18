@@ -1,0 +1,40 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: #161616;
+  height: 100%;
+  width: 100%;
+}
+.mouse-follower {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s;
+  mix-blend-mode: difference;
+  z-index: 999;
+  pointer-events: none;
+}
+
+.blackdot {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s;
+    mix-blend-mode: difference;
+    z-index: 999;
+    pointer-events: none;
+}
